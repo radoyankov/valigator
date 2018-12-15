@@ -1,7 +1,7 @@
 ![logo](https://raw.githubusercontent.com/RadoslavYankov/valigator/master/logo.png)
 
 
-Validate EditText fields in a couple of lines, with custom validations.
+Validate EditText fields in a couple of lines, with custom, scalable validations.
 
 [![Download](https://img.shields.io/badge/version-1.0-06770b.svg?style=flat-square)](https://bintray.com/radoslav/maven/valigator) [![Twitter URL](https://img.shields.io/badge/twitter-%40Radoslav-1DA1F2.svg?style=flat-square&logo=twitter)](http://twitter.com/Radoslav_Y)
 
