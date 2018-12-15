@@ -46,6 +46,10 @@ You can see the third EditText field which accepts a String and a function. That
 
 That's it! When you set up the validators, each time the text inside of the EditText field changes, the validation will be preformed.
 
+Here's a preview of those fields:
+
+![preview](https://raw.githubusercontent.com/RadoslavYankov/valigator/master/preview.gif)
+
 ---
 ## Download
 
