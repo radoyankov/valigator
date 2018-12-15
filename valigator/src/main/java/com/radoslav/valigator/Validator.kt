@@ -25,6 +25,8 @@ import java.lang.NullPointerException
 open class Validator(val errorText: String = VALIDATOR_DEFAULT_ERROR, val validate: EditText.() -> Boolean) {
     class Custom<T>(val errorText: String = VALIDATOR_DEFAULT_ERROR, val validate: EditText.(arg: T?) -> Boolean) {
         var dep: T? = null
+        //IMPORTANT: If you use the Custom class, calling addDependency is necessary.
+        // You can only have one dependency, but it can be anything (a List for views, for example)
         fun addDependency(dependency: T): Custom<T> {
             this.dep = dependency
             return this

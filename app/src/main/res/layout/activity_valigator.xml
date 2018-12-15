@@ -18,10 +18,14 @@
             android:layout_width="200dp"
             android:layout_height="wrap_content"/>
 
-    <ImageView
-            android:id="@+id/image_dependency"
+    <RadioButton
+            android:id="@+id/button_dependency"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@color/colorPrimary"/>
 
+    <EditText
+            android:id="@+id/edit_text_3"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"/>
 </LinearLayout>
