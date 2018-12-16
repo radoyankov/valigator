@@ -29,6 +29,8 @@ The second kind of validation requires a class type to be specified. This is the
 The second step is to enable the validator on EditText fields.
 
 ```kotlin
+        edit_text.setValidator(normalValidator)
+
         edit_text_1.setValidator(normalValidator)
         
         edit_text_2.setValidator(customValidator.addDependency(button_dependency))
