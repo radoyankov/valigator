@@ -22,6 +22,18 @@ The library supports 2 types of validators. One which doesn't have any external 
         val customValidator = Validator.Custom<RadioButton>("Custom Error Message") { button : RadioButton ->
           button?.isChecked == true && text.contains("spaceX")
         }
+        
+        //Multiple errors in one validation
+        val multipleErrorValidator = Validator{
+          if (this == null) {
+                error = "Null object"
+          } else if (text.isEmpty()) {
+                error = "Text is empty"
+          }
+          //it's a good idea to return true, to tell the library you've already displayed the error
+          true
+        }
+        
 ```
 
 The second kind of validation requires a class type to be specified. This is the type of the external data it will be expecting.
