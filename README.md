@@ -24,14 +24,15 @@ The library supports 2 types of validators. One which doesn't have any external 
         }
         
         //Multiple errors in one validation
-        val multipleErrorValidator = Validator{
+        val multipleErrorValidator = Validator{        
+          //it's a good idea to return true inside the checks, to tell the library you've already handled the error
           if (this == null) {
                 error = "Null object"
+                true
           } else if (text.isEmpty()) {
                 error = "Text is empty"
-          }
-          //it's a good idea to return true, to tell the library you've already displayed the error
-          true
+                true
+          } else false
         }
         
 ```
